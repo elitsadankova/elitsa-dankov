@@ -7,23 +7,24 @@ Sections: **Services & pricing** (with FAQ/aftercare), **My work** (before & aft
 ## Files
 
 ```
-index.html            ← all the text, services, photos and reviews
-css/styles.css        ← the look (colours are at the top of the file)
-images/               ← hero and about photos, favicon
-images/gallery/       ← your work photos
+public/index.html          ← all the text, services, photos and reviews
+public/css/styles.css      ← the look (colours are at the top of the file)
+public/images/             ← hero and about photos, favicon
+public/images/gallery/     ← your work photos
+wrangler.jsonc             ← Cloudflare settings (no need to touch)
 ```
 
 ## Preview it
 
-Double-click `index.html` to open it in your browser.
+Double-click `public/index.html` to open it in your browser.
 
 ## Editing
 
-Everything is in `index.html`. Each section starts with a comment like `<!-- ===== SERVICES ===== -->` that explains what to change.
+Everything is in `public/index.html`. Each section starts with a comment like `<!-- ===== SERVICES ===== -->` that explains what to change.
 
 ### Add a photo of your work
-1. Put the photo in `images/gallery/`, e.g. `images/gallery/brows-june.jpg`. Square photos under about 500 KB work best.
-2. In `index.html`, find the **Lashes** or **Brows** gallery, copy one block and change the file name and caption:
+1. Put the photo in `public/images/gallery/`, e.g. `public/images/gallery/brows-june.jpg`. Square photos under about 500 KB work best.
+2. In `public/index.html`, find the **Lashes** or **Brows** gallery, copy one block and change the file name and caption:
    ```html
    <figure class="work">
      <a href="images/gallery/brows-june.jpg"><img src="images/gallery/brows-june.jpg" alt="Laminated brows" loading="lazy"></a>
@@ -43,15 +44,16 @@ Edit the `<article class="service">` blocks. To add a "Most popular" label to a 
 - The **Book now** button link. Point it at your booking page (Fresha, Booksy, Calendly, WhatsApp…) or leave it as your email.
 - The Instagram link in the footer
 - The "Leave a review" link in the reviews section (your Google review link)
-- `images/hero.svg` and `images/about.svg`: add your own photos (e.g. `hero.jpg`) and update the `src` in `index.html`
-- The placeholder photos in `images/gallery/`
+- `public/images/hero.svg` and `public/images/about.svg`: add your own photos (e.g. `hero.jpg`) and update the `src` in `public/index.html`
+- The placeholder photos in `public/images/gallery/`
 
 ### Change colours
-Open `css/styles.css` and edit the values at the top (`--accent`, `--bg` and so on).
+Open `public/css/styles.css` and edit the values at the top (`--accent`, `--bg` and so on).
 
-## Publish it for free with GitHub Pages
-1. On GitHub, open the repository and go to **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**, pick your branch (e.g. `main`) and the `/ (root)` folder, then click **Save**.
-3. After a minute or two the site will be live at `https://<your-username>.github.io/<repo-name>/`.
+## Publish it for free with Cloudflare
+1. In the Cloudflare dashboard go to **Workers & Pages → Create application**.
+2. Choose **Import a repository** (Continue with GitHub) and pick this repository.
+3. Leave the **build command** empty. The **deploy command** should be `npx wrangler deploy` (the default).
+4. Click **Deploy**. The site goes live at `https://elitsa-dankov.<your-subdomain>.workers.dev`.
 
-You can connect your own domain later from the same page.
+Every time a change is pushed to GitHub, Cloudflare publishes it automatically. You can add your own domain later under the project's **Settings → Domains & Routes**.

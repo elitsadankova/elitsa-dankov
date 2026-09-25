@@ -1,0 +1,9 @@
+// Cloudflare deployment settings (used by "Create application" → Workers).
+// The site is served as static files from the public/ folder.
+{
+  "name": "elitsa-dankov",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public"
+  }
+}
