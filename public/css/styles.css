@@ -21,7 +21,7 @@
   --star: var(--pink);
   --radius: 14px;
   --shadow: 0 10px 30px rgba(20, 20, 20, 0.07);
-  --script: "Pinyon Script", cursive;           /* decorative details */
+  --script: "Comforter", cursive;           /* decorative details */
   --sans: "Montserrat", system-ui, -apple-system, sans-serif;  /* main text */
 }
 
@@ -33,6 +33,7 @@ body {
   color: var(--text);
   font: 16px/1.65 var(--sans);
   -webkit-font-smoothing: antialiased;
+  font-feature-settings: "locl" 0;   /* standard Cyrillic letter shapes */
 }
 img { max-width: 100%; display: block; }
 a { color: var(--accent-dark); }
@@ -94,7 +95,7 @@ h3 { font-size: 1.25rem; }
 .hero__inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center; }
 .hero .eyebrow {
   font-family: var(--sans); font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .16em;
-  display: inline-block; background: var(--yellow); padding: .25rem .75rem; border-radius: 999px; margin-bottom: 1rem;
+  display: inline-block; background: var(--yellow); padding: .3rem .75rem; border-radius: 14px; margin-bottom: 1rem; line-height: 1.6;
 }
 .hero__tagline { font-size: 1.15rem; color: var(--muted); max-width: 32ch; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
@@ -125,7 +126,7 @@ h3 { font-size: 1.25rem; }
 }
 .service--featured { border: 2px solid var(--pink); background: var(--pink-light); box-shadow: var(--shadow); }
 .service--featured::before {
-  content: "Most popular"; position: absolute; top: -12px; left: 1.75rem;
+  content: "Най-търсена"; position: absolute; top: -12px; left: 1.75rem;
   background: var(--pink); color: var(--ink); font-size: .72rem; font-weight: 600;
   letter-spacing: .06em; padding: .25rem .7rem; border-radius: 999px;
 }
@@ -170,7 +171,6 @@ h3 { font-size: 1.25rem; }
   padding: 1.75rem; margin: 0; display: flex; flex-direction: column;
 }
 .review blockquote { margin: .75rem 0 .75rem; font-size: 1rem; line-height: 1.6; font-style: italic; }
-.review__original { margin: 0 0 1.25rem; font-size: .85rem; color: var(--muted); padding-left: .75rem; border-left: 2px solid var(--pink); font-feature-settings: "locl" 0; }
 .review figcaption { margin-top: auto; font-size: .9rem; }
 .review figcaption strong { display: block; }
 .review figcaption span { color: var(--muted); }

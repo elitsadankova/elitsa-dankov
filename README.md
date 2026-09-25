@@ -1,59 +1,58 @@
-# Elitsa Lash & Brow — portfolio website
+# Елица · Мигли и вежди – уебсайт портфолио
 
-A one-page website for a lash lift and brow lamination business, written in plain HTML and CSS. There's no JavaScript, no build step and nothing to install.
+Едностраничен сайт за лифтинг на мигли и ламиниране на вежди, написан на чист HTML и CSS. Без JavaScript, без инсталиране и без допълнителни стъпки.
 
-Sections: **Services & pricing** (with FAQ/aftercare), **My work** (before & after, lashes, brows), **Client reviews**, **About** and **Contact / booking**.
+Секции: **Услуги и цени** (с често задавани въпроси и грижа след процедурата), **Портфолио**, **Отзиви**, **За мен** и **Контакти**.
 
-## Files
+## Файлове
 
 ```
-public/index.html          ← all the text, services, photos and reviews
-public/css/styles.css      ← the look (colours are at the top of the file)
-public/images/             ← hero and about photos, favicon
-public/images/gallery/     ← your work photos
-wrangler.jsonc             ← Cloudflare settings (no need to touch)
+public/index.html          ← целият текст, услуги, снимки и отзиви
+public/css/styles.css      ← визията (цветовете и шрифтовете са най-горе във файла)
+public/images/             ← снимка за „За мен“ и иконка на сайта
+public/images/gallery/     ← снимките на твоята работа
+wrangler.jsonc             ← настройки за Cloudflare (не е нужно да се пипа)
 ```
 
-## Preview it
+## Преглед
 
-Double-click `public/index.html` to open it in your browser.
+Отвори `public/index.html` с двоен клик – ще се покаже в браузъра.
 
-## Editing
+## Редактиране
 
-Everything is in `public/index.html`. Each section starts with a comment like `<!-- ===== SERVICES ===== -->` that explains what to change.
+Всичко е в `public/index.html`. Всяка секция започва с коментар, например `<!-- ===== УСЛУГИ ===== -->`, който обяснява какво може да се промени.
 
-### Add a photo of your work
-1. Put the photo in `public/images/gallery/`, e.g. `public/images/gallery/brows-june.jpg`. Square photos under about 500 KB work best.
-2. In `public/index.html`, find the **Lashes** or **Brows** gallery, copy one block and change the file name and caption:
+### Добавяне на снимка
+1. Сложи снимката в `public/images/gallery/`, например `public/images/gallery/vezhdi-yuni.jpg`. Най-добре квадратни снимки до около 500 KB. Използвай латински букви в името на файла.
+2. В `public/index.html` намери галерията, копирай един блок и смени името на файла и надписа:
    ```html
    <figure class="work">
-     <a href="images/gallery/brows-june.jpg"><img src="images/gallery/brows-june.jpg" alt="Laminated brows" loading="lazy"></a>
-     <figcaption>Brow lamination & tint</figcaption>
+     <a href="images/gallery/vezhdi-yuni.jpg"><img src="images/gallery/vezhdi-yuni.jpg" alt="Ламинирани вежди" loading="lazy"></a>
+     <figcaption>Ламиниране на вежди</figcaption>
    </figure>
    ```
-3. For a before & after, copy a `<figure class="work work--pair">` block from the **Before & after** gallery and set both images.
+3. За снимки „преди и след“ има готов шаблон в коментар над галерията.
 
-### Add a review
-Copy one `<figure class="review">` block, paste it at the top of the list and change the name, stars (`★★★★★`), treatment, date and text. Only post real reviews, and ask your clients before you do.
+### Добавяне на отзив
+Копирай един блок `<figure class="review">`, постави го най-отгоре в списъка и смени името, звездите (`★★★★★`), датата и текста.
 
-### Change services and prices
-Edit the `<article class="service">` blocks. To add a "Most popular" label to a service, give it `class="service service--featured"`.
+### Промяна на услуги и цени
+Редактирай блоковете `<article class="service">`. За етикет „Най-търсена“ сложи `class="service service--featured"`.
 
-### Other things to replace
-- The phone number, email, address and opening hours in the **Contact** section
-- The **Book now** button link. Point it at your booking page (Fresha, Booksy, Calendly, WhatsApp…) or leave it as your email.
-- The Instagram link in the footer
-- The "Leave a review" link in the reviews section (your Google review link)
-- `public/images/hero.svg` and `public/images/about.svg`: add your own photos (e.g. `hero.jpg`) and update the `src` in `public/index.html`
-- The placeholder photos in `public/images/gallery/`
+### Какво още да смениш
+- Телефон, имейл, адрес и работно време в секция **Контакти**
+- Линка на бутона **Запази час** – към системата ти за записване (Fresha, Booksy, Calendly, WhatsApp…) или остави имейла
+- Линка към Instagram в долната част
+- Линка „Остави отзив“ в секцията с отзиви
+- `public/images/about.svg` – твоя снимка за секция „За мен“ (напр. `about.jpg`), после смени `src` в `public/index.html`
 
-### Change colours
-Open `public/css/styles.css` and edit the values at the top (`--accent`, `--bg` and so on).
+### Промяна на цветовете
+Отвори `public/css/styles.css` и промени стойностите най-горе (`--pink`, `--blue` и т.н.).
 
-## Publish it for free with Cloudflare
-1. In the Cloudflare dashboard go to **Workers & Pages → Create application**.
-2. Choose **Import a repository** (Continue with GitHub) and pick this repository.
-3. Leave the **build command** empty. The **deploy command** should be `npx wrangler deploy` (the default).
-4. Click **Deploy**. The site goes live at `https://elitsa-dankov.<your-subdomain>.workers.dev`.
+## Публикуване безплатно с Cloudflare
+1. В Cloudflare отиди на **Workers & Pages → Create application**.
+2. Избери **Import a repository** (Continue with GitHub) и това хранилище.
+3. Остави **build command** празно. **Deploy command** трябва да е `npx wrangler deploy` (по подразбиране).
+4. Натисни **Deploy**. Сайтът ще е на адрес `https://elitsa-dankov.<твоят-поддомейн>.workers.dev`.
 
-Every time a change is pushed to GitHub, Cloudflare publishes it automatically. You can add your own domain later under the project's **Settings → Domains & Routes**.
+При всяка промяна в GitHub, Cloudflare публикува сайта автоматично. Собствен домейн можеш да добавиш по-късно от **Settings → Domains & Routes**.
