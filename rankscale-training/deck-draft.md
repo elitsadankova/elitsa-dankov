@@ -1,17 +1,15 @@
-# Rankscale onboarding: deck copy draft (v1, for review)
+# Rankscale onboarding: deck copy draft (v2, for review)
 
-**Session:** 60 min · **Format:** opening 3 min → live walkthrough 20 min → deck 25 min → Q&A 12 min
-**Audience:** client marketing team; already fluent in GEO, new to Rankscale
-**Slides:** 17
+**Session:** 60 min · opening 3 min → live walkthrough 20 min → deck 25 min → Q&A 12 min
+**Audience:** client marketing team; fluent in GEO, new to Rankscale
+**Slides:** 16 · **Sources:** Rankscale Search Academy (Modules 2–8), rankscale.ai/features, help centre, changelog
 
 ---
 
 ## 1 · Title
 **Rankscale onboarding**
-Getting the most out of your AI visibility platform
+From tracking to action in your AI visibility platform
 *[Client name] marketing team · VertoDigital · [date]*
-
-> Notes: Welcome. Today is hands-on: how Rankscale works, how to read it, and how to make it part of your weekly routine.
 
 ---
 
@@ -20,175 +18,183 @@ Getting the most out of your AI visibility platform
 |---|---|
 | 0–3 min | Kick-off |
 | 3–23 min | **Live walkthrough** in your account |
-| 23–26 min | Reading the metrics |
-| 26–40 min | Features that go deeper |
-| 40–48 min | Use cases and tips |
+| 23–35 min | Setup, metrics and benchmarks |
+| 35–48 min | Features, actions and reporting |
 | 48–60 min | Q&A and discussion |
 
-> Notes: Hold questions about the walkthrough until the end, or drop them in chat. We'll pick them up in Q&A.
+> Notes: Hold questions until the end, or drop them in chat.
 
 ---
 
 ## 3 · Live walkthrough: our route *(on screen during the demo)*
-1. **Brand setup**: domain, competitors, country and language, tags
-2. **Search terms and Topics**: adding terms, "Find Terms", choosing engines, how often each runs, region
-3. **Brand Visibility Dashboard**: the headline metrics, filtering by engine, topic and tag
-4. **One search term up close**: the answer from each engine, and where your brand appears
-5. **Competitors, Citations and Sentiment**: who wins and why
+1. **Brand setup**: domain, competitors, region and language, tags
+2. **Search Terms**: Bulk Add, Find Terms, manual runs, View Detailed Insights
+3. **Brand Visibility Dashboard**: Visibility, Mentions, Citations, Sentiment, Position; filters by engine, topic and tag
+4. **One prompt up close**: each engine's answer, where you appear, who's cited
+5. **Quick Insights**: this week's anomalies at a glance
 
-> Notes: Live in the client account, ~20 min. Keep this slide up as a map, and come back to it between steps.
+> Notes: ~20 min live in the client account. Come back to this slide between steps.
 
 ---
 
-## 4 · Reading the dashboard: metrics cheat sheet *(~3 min)*
+## 4 · Setting up prompt groups: the 3x2x2
+**12 short, tagged prompts per segment:** 3 intents × 2 scopes × branded and non-branded
+
+| Intent | Non-branded | Branded |
+|---|---|---|
+| Information | mobile phone plans | mobile phone plans [Brand] |
+| Consideration | best mobile phone plans | best mobile phone plans [Brand] |
+| Transaction | mobile phone plans price | mobile phone plans price [Brand] |
+*…repeat for the niche scope (e.g. "prepaid mobile phone plans")*
+
+**Three required tags:** Branded / Non-branded · Intent · Scope. No tags means you can't filter or act on the data later.
+**Rules:** 2–5 words, no filler words ("what", "how", "a"). Every extra word adds run-to-run volatility.
+**Where to find prompts:** Prompt Research (50 credits per segment) · Find Terms after a Page Audit · query fan-out in Detailed Insights
+
+> Notes: Tip: run ~10 branded consideration prompts first and read the Sentiment view. The benefits AI already ties to your category are niche prompts you can win.
+
+---
+
+## 5 · The 7 core metrics
 | Metric | What it tells you |
 |---|---|
-| **Visibility score** | Headline score that combines mentions, position and citations. Track the trend. |
-| **Detection rate** | Share of AI answers that mention your brand |
-| **Average position** | Where your brand appears in the answer when it is mentioned |
-| **Top 3 rate** | How often you're among the first three brands named |
-| **Mentions** | Times your brand is named in answers |
-| **Citations** | Times your URLs are linked as a source |
-| **Sources** | Your URLs supported an answer *without* your brand being named |
-| **Sentiment** | Positive, neutral or negative tone of mentions |
+| **Visibility Score** | Headline 0–100 per prompt or group; read branded and non-branded separately |
+| **Detection Rate** | % of runs where you appear at all |
+| **Position** | Where you're named in the answer: #1–3, #4–6, #7+ or Not Found |
+| **Mentions vs Citations** | Awareness vs trust. The gap between them is the **Trust Gap**. |
+| **Sentiment** | Positive, neutral, mixed or negative |
+| **Share of Voice** | Your mention share against competitors |
+| **Share of Citations** | Your citation share against competitors |
 
-**How to read it:** AI answers vary from run to run. Judge trends over weeks, not single runs, and compare the same engines and time frames.
+**How to read it:** the headline score hides the cause. A score of 40 could be a detection, position or trust problem, and each has a different fix.
 
 ---
 
-## 5 · How tracking works: engines and run types
-**Engines tracked:** ChatGPT · Google AI Mode · Google AI Overviews · Gemini · Perplexity · Bing Copilot · Meta Muse Spark
+## 6 · What good looks like: benchmarks
+| | Floor | Standard | Elite |
+|---|---|---|---|
+| Global category | 1.0% | 2.8% | 6.0%+ |
+| Niche in segment | 5.0% | 24.5% | 40%+ |
+| Niche-in-niche | 12% | 38% | 55%+ |
 
-**Two ways a prompt is run:**
-| | **GUI run** | **API run** |
+- **Branded detection:** ≥95% good · 90–95% bad · <90% means fix entity signals first
+- **Sentiment:** >65% strong · 55–65% healthy · 45–55% warning · <45% crisis
+- **Position:** #1–3 strong · #4–6 mid · #7+ weak
+- **Always cross-check** against the median of your top 3 competitors. If theirs is higher, that's your Standard.
+
+*Thresholds from the Rankscale Search Academy; they are guidance, not settings in the platform.*
+
+---
+
+## 7 · Beyond the dashboard: feature map
+Citation Analysis · Query Fanout · Competitor Analysis · Sentiment Analysis and Sentiment Radar · Page Audit V2 · Prompt Research · Rankscale Scout · AI Visits `NEW` · ChatGPT Follow-up Forms `NEW`
+
+> Notes: The dashboard was covered live. These are the tools that explain *why*.
+
+---
+
+## 8 · Citation Analysis
+**Which domains and URLs win citation share, and where you stand.**
+- Filter by prompt, engine and niche, and see your Share of Citations against competitors
+- A domain newly cited this week is a new PR target
+- Prioritise by citation share, not volume: an 18% source is worth 3x a 6% one
+
+**Use it to:** build outreach lists of 3–6 domains where competitors are cited and you aren't, and open the top 3 cited URLs to see why they win.
+
+---
+
+## 9 · Query Fanout and Detailed Insights
+**The searches AI engines run before they answer.**
+- Search Terms → View Detailed Insights on a prompt → scroll to fan-out
+- See the sub-queries, the words engines add (e.g. "best", "2026"), the domains they check, and which ones win
+
+**Use it to:** turn hidden queries into new tracked prompts and content briefs.
+
+---
+
+## 10 · Competitors and Sentiment
+**Competitor Analysis:** auto-detected rivals compared side by side on visibility, position, detection, Share of Voice and citations.
+**Sentiment and Sentiment Radar:** how LLMs describe you compared with competitors, with the recurring positive and negative phrases behind the score.
+
+**Use it to:**
+- Find prompts where competitors are named and you aren't
+- Take competitors' top 3 recurring negatives and write your answering positives into your content
+- Trace recurring negatives to their source, and respond only to the 3–5 sources actually feeding the score
+
+---
+
+## 11 · Page Audit V2
+**One URL, checked in seconds, with the failing line shown.**
+- **Access:** AI crawlers allowed, indexed on Google, content in raw HTML
+- **Parsing:** JSON-LD schema, heading hierarchy, self-contained paragraphs
+- Rule-based scoring, so results are the same every time you run it
+
+**Use it to:** check the page that should answer your most important prompt before you start content or PR work.
+
+---
+
+## 12 · Rankscale Scout and what's new
+- **Rankscale Scout:** auto-generated recommendations per prompt and per engine, plus content ideas from Sentiment Radar. Use it as your action list.
+- **AI Visits** `NEW`: which AI bots visit your site, which pages they read, and which links send them to a 404 *(read-only Cloudflare connection)*
+- **ChatGPT Follow-up Forms** `NEW`: the clarifying questions ChatGPT asks before recommending brands, and which answers it pre-selects
+
+---
+
+## 13 · From metric to action
+| If you see… | It usually means… | Gap |
 |---|---|---|
-| How | Automated browser queries the engine's public interface | Direct connection to the model's API |
-| What you see | What a real user sees, including web search and citations | The model's raw answer, faster and more consistent |
-| Credits | 0.25 per run | From 1 per run (some models cost more) |
-| Best for | Day-to-day visibility tracking | Model-level comparisons, extra engines |
+| Low branded detection | AI can't verify your entity | PR (entity) |
+| No mentions or citations | Blocked crawlers or missing content | SEO / Content |
+| Mentioned but not cited | Content isn't citable (Trust Gap) | Content |
+| Position #7+ or Not Found | Competitor content preferred | Content |
+| Volatile position across runs | Thin third-party coverage | PR (citations) |
+| Negative or conflicting sentiment | Reputation or source conflict | PR (sentiment) |
+| One competitor always wins | Format gap: reverse-engineer their page | Content / SEO |
 
-**Credit tip:** cost = terms × engines × how often they run. Weekly runs on the core engines cover most needs.
-
----
-
-## 6 · Beyond the dashboard: feature map
-- **Citation Analysis**: which domains win citation share
-- **Query Fanout**: the hidden searches AI engines run
-- **Competitor Analysis**: side-by-side visibility against rivals
-- **Sentiment Analysis**: how LLMs describe you compared with competitors
-- **Page Audit**: AI citation readiness, URL by URL
-- **Prompt Research**: real prompt patterns and intents
-- **AI Visits** `NEW`: which AI bots read your site
-- **ChatGPT Follow-up Forms** `NEW`: the clarifying questions ChatGPT asks
-
-> Notes: The dashboard was covered live. These are the tools for the *why*, which we take one by one next.
+**Fix order:** SEO → Content → PR. Ship one fix, then re-check in 4 weeks.
 
 ---
 
-## 7 · Citation Analysis
-**See which domains win citation share, and where you stand.**
-- Most-cited domains and URLs by engine, topic and search term
-- Your share of citations against competitors
-- Spot third-party sites (reviews, media, forums) that shape AI answers
+## 14 · Reporting: dashboards that get read
+**Build these four Custom Dashboards:**
+1. **Funnel Health:** non-branded prompts by intent. Where does the funnel leak?
+2. **Engine Gap:** engines side by side. Fix the engine your buyers use most.
+3. **Niche Dominance:** visibility and Share of Citations per priority segment
+4. **Scenario Proof:** locked long-tail prompts for before/after proof
 
-**Use it to:** build PR and outreach lists, and find pages worth updating.
-
----
-
-## 8 · Query Fanout
-**See the searches AI engines run before they answer.**
-- The sub-queries ChatGPT, AI Overviews and Copilot fire behind one prompt
-- Appendix words engines add (e.g. "2026", "best", "reviews")
-- The domains they check, and which ones win
-
-**Use it to:** turn hidden queries into content briefs and on-page wording.
+**Share it:** read-only dashboard links, PDF export, Looker Studio integration, API and MCP server
+**Match the audience:** C-suite monthly (1 slide) · marketing lead bi-weekly (2–3 metrics) · practitioners weekly (everything)
 
 ---
 
-## 9 · Competitor Analysis and Sentiment
-**Competitors:** auto-detected and compared side by side on visibility, average rank, detection rate, top 3 rate, mentions and citations.
-**Sentiment:** how LLMs describe your brand, and how that compares with rivals.
+## 15 · The weekly 5-minute read and tips
+**Every Monday:**
+1. **Visibility:** any prompt flipped red?
+2. **Branded detection:** below 90%? Fix it first.
+3. **Mentions:** who moved in Share of Voice?
+4. **Citations:** any newly cited domain? That's a PR target.
+5. **Sentiment:** any negative phrase showing up more than 3 times in 7 days? Trace it.
 
-**Use it to:** find search terms where competitors appear and you don't, and spot negative narratives early.
-
----
-
-## 10 · Page Audit
-**Score any URL for human trust and AI citation readiness.**
-- Classifies the page type (e.g. e-commerce, local, YMYL)
-- Rule-based checks: SEO, AI readiness, schema, E-E-A-T, links, content structure
-- No LLMs in the scoring, so results are the same every time you run it
-
-**Use it to:** prioritise fixes on the pages you want AI to cite.
+**Tips**
+- Run daily for the first 14 days to build a baseline, then weekly
+- Ignore single-digit swings; detection settles in 2–4 weeks
+- Tag everything, and judge trends rather than single runs
+- Segment AI referrers (chatgpt.com, perplexity.ai…) as their own channel in GA4
 
 ---
 
-## 11 · New: AI Visits and ChatGPT Follow-up Forms
-**AI Visits:** which AI bots visit your site, which pages they read, and which links send them to a 404. *(Read-only Cloudflare connection.)*
-**ChatGPT Follow-up Forms:** the clarifying questions ChatGPT asks before it recommends brands, and which answers it pre-selects.
+## 16 · Your first week, then Q&A
+- [ ] Build one 3x2x2 prompt group with all three tags
+- [ ] Run Page Audit V2 on your most important page
+- [ ] Set up the Funnel Health dashboard
+- [ ] Book a 90-minute audit once 7 days of data exist
 
-**Use it to:** fix crawl gaps, and shape content around the criteria ChatGPT asks buyers about.
-
----
-
-## 12 · Prompt Research and better search terms
-**Prompt Research:** surfaces real prompt patterns and intents from large-scale AI query data.
-**Find Terms:** AI-suggested terms inside each Topic, ranked by simulated volume.
-
-**Use it to:** track the prompts your buyers actually use, not the keywords you'd guess.
-
----
-
-## 13 · Reporting and automation
-- **Custom dashboard views:** build widget-based views, save several, export to PDF
-- **Shareable links:** read-only dashboards for stakeholders without an account
-- **API and MCP server:** pull visibility, citations, fan-out and sentiment data into your own tools or AI assistants
-- **Beta:** recommendations, GA4 and Search Console connection
-
----
-
-## 14 · Five ways marketing teams use Rankscale
-1. **Benchmark:** visibility and share of voice against competitors, by engine
-2. **Find gaps:** terms where competitors are named and you're not
-3. **Earn citations:** target the sites AI engines trust most
-4. **Optimise content:** Page Audit and Query Fanout insights turned into briefs
-5. **Report:** shared views for leadership, monthly trend stories
-
----
-
-## 15 · A simple weekly routine *(20–30 min)*
-1. **Visibility tab:** what moved this week?
-2. **Drill in:** open the tab that moved most (Competitors, Citations, Sentiment)
-3. **Check the why:** Query Fanout and the cited sources for the terms that dropped
-4. **Act:** one content, PR or technical fix per week
-5. **Log it:** note what you changed, so next month's trend has a story
-
----
-
-## 16 · Tips from the field
-- **Relevance over volume:** fewer, sharper search terms produce cleaner data
-- **Tag everything:** split branded and non-branded terms, and tag by funnel stage
-- **Group by Topic:** report on themes, not single prompts
-- **Watch your credits:** GUI runs for tracking, API runs only where needed
-- **Trends, not snapshots:** wait for several runs before reacting
-- **Keep competitors current:** review the auto-detected list each month
-- **Share, don't screenshot:** use saved views and live links
-
----
-
-## 17 · Keep learning, then Q&A
-- **Rankscale Learning Hub:** 9 modules, free (rankscale.ai/resources)
-- **GEO Glossary:** 90+ terms
-- **Help centre:** help.rankscale.ai
-- **Your VertoDigital team:** [contact]
+**Keep learning:** Rankscale Search Academy (rankscale.ai/resources) · help.rankscale.ai · your VertoDigital team
 
 **Questions?**
 
 ---
 
-### Open points to confirm
-1. **"Normal vs GPU" (slide 5).** I read this as **GUI vs API** runs, Rankscale's two run types. Please correct me if you meant something else.
-2. **API run credits.** These come from third-party reviews (Claude ~2, DeepSeek ~1), so please check them in your account. Slide 5 currently says only "from 1 per run".
-3. **Engines (slide 5).** The list follows your screenshot. Should we also name the API-only models (e.g. Claude, DeepSeek)?
-4. **Metric definitions (slide 4).** These come from Rankscale's help centre and review sites. The exact Visibility score formula isn't public.
-5. **Client name and date** for slides 1 and 17.
+### Open points
+1. Client name and date for slide 1.
+2. Benchmarks (slide 6) are included and labelled as Academy guidance. Cut them if you'd rather not set targets in this session.
