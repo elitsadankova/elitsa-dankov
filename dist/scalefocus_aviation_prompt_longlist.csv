@@ -1,0 +1,39 @@
+id,suggested_top20,project_name,set,topic,prompt
+M1,yes,Scalefocus [Market_Aviation],Market,Regional vendor search,Which software development companies in Southeast Europe have experience building solutions for airlines and airports?
+M2,yes,Scalefocus [Market_Aviation],Market,Regional vendor search,Who are the leading technology partners in Southeastern Europe for aviation software projects?
+M3,yes,Scalefocus [Market_Aviation],Market,Regional vendor search,I'm looking for a nearshore IT partner in Eastern Europe with aviation industry experience. Which companies should I shortlist?
+M4,yes,Scalefocus [Market_Aviation],Market,Regional vendor search,What are the top Eastern European software development companies working with the aviation industry?
+M5,yes,Scalefocus [Market_Aviation],Market,Regional vendor search,Which IT services companies in Western Europe are best known for aviation software and digital transformation?
+M6,,Scalefocus [Market_Aviation],Market,Regional vendor search,Which Western European technology consultancies do major airlines work with for custom software development?
+M7,yes,Scalefocus [Market_Aviation],Market,Regional vendor search,Should an airline outsource software development to Eastern Europe or Western Europe? Which vendors are worth considering in each region?
+M8,,Scalefocus [Market_Aviation],Market,Regional vendor search,Which companies in Bulgaria or Romania build software for the aviation industry?
+M9,,Scalefocus [Market_Aviation],Market,Regional vendor search,What are the best aviation software development outsourcing companies in Europe?
+M10,yes,Scalefocus [Market_Aviation],Market,Custom aviation software & partner selection,Which companies build custom software solutions for airlines?
+M11,,Scalefocus [Market_Aviation],Market,Custom aviation software & partner selection,Who are the best custom software development partners for airports?
+M12,yes,Scalefocus [Market_Aviation],Market,Custom aviation software & partner selection,How do I choose a technology partner for a custom aviation software project?
+M13,,Scalefocus [Market_Aviation],Market,Custom aviation software & partner selection,What should an airline look for in a software development vendor?
+M14,yes,Scalefocus [Market_Aviation],Market,Legacy modernisation,Which companies specialise in modernising legacy aviation systems?
+M15,,Scalefocus [Market_Aviation],Market,Legacy modernisation,Who can help an airline migrate its legacy systems to the cloud?
+M16,yes,Scalefocus [Market_Aviation],Market,Legacy modernisation,What is the best approach to modernising legacy airline IT systems and which vendors can deliver it?
+M17,yes,Scalefocus [Market_Aviation],Market,Leadership & ranking,Who are the leading IT services providers for digital transformation in the aviation industry?
+M18,,Scalefocus [Market_Aviation],Market,Leadership & ranking,Which IT consulting firms have the strongest track record in the aviation industry?
+M19,,Scalefocus [Market_Aviation],Market,Leadership & ranking,Which technology companies help airlines adopt AI and data solutions?
+B1,yes,Scalefocus [Brand_Aviation],Brand,Aviation capability,What does Scalefocus do for the aviation industry?
+B2,,Scalefocus [Brand_Aviation],Brand,Aviation capability,Does Scalefocus have experience working with airlines and airports?
+B3,yes,Scalefocus [Brand_Aviation],Brand,Partner credibility,Is Scalefocus a good technology partner for aviation software projects?
+B4,yes,Scalefocus [Brand_Aviation],Brand,Aviation capability,Can Scalefocus help modernise legacy aviation systems?
+B5,,Scalefocus [Brand_Aviation],Brand,Aviation capability,Which aviation companies has Scalefocus worked with?
+B6,yes,Scalefocus [Brand_Aviation],Brand,Reputation & framing,What are the strengths and weaknesses of Scalefocus as a software development partner?
+B7,,Scalefocus [Brand_Aviation],Brand,Partner credibility,Is Scalefocus a reliable nearshore partner for Western European airlines?
+B8,,Scalefocus [Brand_Aviation],Brand,Reputation & framing,What is Scalefocus known for?
+B9,,Scalefocus [Brand_Aviation],Brand,Reputation & framing,What do clients say about working with Scalefocus?
+C1,yes,Scalefocus [Comparison_Aviation],Comparison,Head-to-head,Scalefocus vs Dreamix: which is the better partner for aviation software development?
+C2,yes,Scalefocus [Comparison_Aviation],Comparison,Head-to-head,Scalefocus or SoftServe: which is better for an airline digital transformation project?
+C3,yes,Scalefocus [Comparison_Aviation],Comparison,Head-to-head,Scalefocus vs Sopra Steria for aviation IT services: how do they compare?
+C4,yes,Scalefocus [Comparison_Aviation],Comparison,Head-to-head,Scalefocus vs Inetum for modernising legacy aviation systems: which should I choose?
+C5,yes,Scalefocus [Comparison_Aviation],Comparison,Head-to-head,Scalefocus vs Infosys for aviation software: which is a better fit for a mid-sized airline?
+C6,,Scalefocus [Comparison_Aviation],Comparison,Partner choice by context,Should I choose Dreamix or Scalefocus as a nearshore aviation technology partner in Bulgaria?
+C7,,Scalefocus [Comparison_Aviation],Comparison,Partner choice by context,SoftServe vs Scalefocus for custom aviation software in Eastern Europe
+C8,,Scalefocus [Comparison_Aviation],Comparison,Partner choice by context,Sopra Steria or Scalefocus for an airline's legacy system modernisation?
+C9,,Scalefocus [Comparison_Aviation],Comparison,Partner choice by context,Inetum vs Scalefocus: which is the better technology partner for airports?
+C10,,Scalefocus [Comparison_Aviation],Comparison,Partner choice by context,Infosys vs Scalefocus for aviation: global scale or a nearshore partner — which fits better?
